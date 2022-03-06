@@ -1,0 +1,33 @@
+{
+	"name": "childacademy",
+	"version": "1.0.0",
+	"description": "Backend for ChildAcademy website",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server",
+		"server": "nodemon server",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"config": "^3.3.6",
+		"crypto": "^1.0.1",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"express-validator": "^6.12.0",
+		"gravatar": "^1.8.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.12.14",
+		"multer": "^1.4.2",
+		"nodemailer": "^6.6.3",
+		"socket.io": "^4.1.2",
+		"uuid": "^8.3.2"
+	},
+	"devDependencies": {
+		"concurrently": "^6.2.0",
+		"nodemon": "^2.0.7"
+	}
+}
